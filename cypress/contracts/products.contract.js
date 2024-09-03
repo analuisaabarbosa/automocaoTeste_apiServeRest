@@ -1,6 +1,6 @@
 const Joi = require ('joi')
 
-const produtosSchema = Joi.object({
+const productsSchema = Joi.object({
     quantidade: Joi.number(), 
     produtos: Joi.array().items({
         nome: Joi.string(),
@@ -10,4 +10,5 @@ const produtosSchema = Joi.object({
         _id: Joi.string()
     })
 })
-export default produtosSchema;
+
+export default productsSchema;
