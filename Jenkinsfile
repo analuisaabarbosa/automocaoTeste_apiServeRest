@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Executar testes') {
             steps {
-                sh 'npm run start-and-test'
+                sh 'export NO_COLOR =1 npm run start-and-test'
             }
         }
     }
