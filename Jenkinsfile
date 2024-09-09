@@ -9,12 +9,12 @@ pipeline {
         }
         stage('Instalar dependências') {
             steps {
-                bat 'npm install'
+                sh 'npm install'
             }
         }
         stage('Executar testes') {
             steps {
-                bat 'npm run start-and-test'
+                sh 'npm run start-and-test'
             }
         }
     }
