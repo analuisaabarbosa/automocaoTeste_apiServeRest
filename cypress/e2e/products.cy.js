@@ -48,7 +48,7 @@ describe('Product Functionality Testing', () => {
     });
 
     it('Must validate error message when registering a duplicate product', () => {
-        cy.addProduct(token, 'Unbranded Granite Table', 250, "New product", 1000)
+        cy.addProduct(token, 'Samsung 60 polegadas', 250, "New product", 1000)
             .then((response) => {
                 expect(response.status).to.equal(400)
                 expect(response.body.message).to.equal('Já existe produto com esse nome')

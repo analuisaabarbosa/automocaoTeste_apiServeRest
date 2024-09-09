@@ -35,7 +35,7 @@ describe('Users Functionality Test', () => {
   });
 
   it('Must validate a user with an invalid email', () => {
-    cy.addUser('Suelen', 'SueWolf58@gmail.com', 'suelen')
+    cy.addUser('Suelen', 'fulano@qa.com', 'suelen')
       .should((response) => {
         expect(response.status).to.equal(400)
         expect(response.body.message).to.equal("Este email já está sendo usado")
