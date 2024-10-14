@@ -8,7 +8,7 @@ module.exports = defineConfig({
     baseUrl: "http://localhost:3000/",
     reporter: 'mochawesome',
     reporterOptions: {
-      reportDir: 'cypress/reports',
+      reportFilename: 'index.html',
       overwrite: false,
       html: true,
       json: false,
